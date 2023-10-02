@@ -19,6 +19,8 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     context.read<NoteCubit>().getMyNotes(
           NoteModel(creatorId: widget.uid),
+
+          ///
         );
     super.initState();
   }
